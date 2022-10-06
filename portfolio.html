@@ -12,39 +12,43 @@
 </head>
 <body>
     <!--header-->  
-    <header class="body-header">
+  <header class="heder">
+     <div class="container header-wrap">
       <a class="logo" href="./index.html">Web<span class="accent-header">Studio</span></a>
-      <nav class="menu">    
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item"><a href="./portfolio.html" class="link curent">Портфоліо</a></li>
-            <li class="item"><a href="./contact.html" class="link">Контакт</a></li>
+        <nav class="site-nav">    
+        <ul>
+            <li class="item-nav link"><a href="./index.html" class="link curent">Студія</a></li>
+            <li class="item-nav link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
+            <li class="item-nav link"><a href="./contact.html" class="link">Контакт</a></li>
         </ul>
-      </nav>
+        </nav>
           <ul>
-            <li class="item">
+          <li class="item-contact">
             <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
             </li>
-            <li>
+          <li class="item-contact">
             <a class="contact" href="tel:0961111111">096 111 11 11</a>
-            </li>
-          </ul>
+          </li>
+        </ul>
+     </div>
     </header>
   <!--main-->
   <main>
       <!--main content-->
-    <div class="auth-nav">
+     <div class="container auth-nav">
       <!--buttons-->
       <ul>
-        <li><button type="button" class="button">Усі</button></li>
-        <li><button type="button" class="button primary" >Веб-сайти</button></li>
-        <li><button type="button" class="button primary" >Додатки</button></li>
-        <li><button type="button" class="button primary" >Дизайн</button></li>
-        <li><button type="button" class="button primary" >Маркетинг</button></li>
+        <li><button class="button-nav" type="button" class="button">Усі</button></li>
+        <li><button class="button-nav" type="button" class="button primary" >Веб-сайти</button></li>
+        <li><button class="button-nav" type="button" class="button primary" >Додатки</button></li>
+        <li><button class="button-nav" type="button" class="button primary" >Дизайн</button></li>
+        <li><button class="button-nav" type="button" class="button primary" >Маркетинг</button></li>
       </ul>  
-    </div>
+     </div>
   <!--projects-->
-        <ul>
+     <div  class="container project-nav">
+      <h1  class="hiden-title">Проєкти</h1>
+        <ul class="main-project">
           <li><a class="project" href="">
                 <img
                 class="project-image"
@@ -132,11 +136,13 @@
               <p class="project-description">Додаток</p>
               </a>
           </li>
-        </ul>   
+        </ul>
+     </div>   
   </main>
   <!-- footer --> 
-    <footer class="body-footer">
+    <footer class="container body-footer">
       <a class="logo" href="./studio.html">Web<span class="accent-footer">Studio</span></a>
+      <div class="container address-wrap">
       <address>
           <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
         <ul>
@@ -144,6 +150,7 @@
           <li><a class="footer-contact" href="tel:0961111111">096 111 11 11</a></li>
         </ul>
       </address>
+      </div>
     </footer> 
 </body>
 </html>

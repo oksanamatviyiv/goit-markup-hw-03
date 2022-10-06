@@ -7,7 +7,6 @@
   --background-color: #2f303a;
   --button-color: #eeeeee;
   --accent-text-color: #ffffff99;
-  --typical-margin: 20px;
 }
 
 p,
@@ -22,12 +21,13 @@ margin: 0;
 
 ul {
 margin: 0; 
- padding-left: 0;
+padding-left: 0;
 list-style: none;
 }
+
 li {
-margin: 0;
- line-height: initial;
+  margin: 0;
+  line-height: initial;
 }
 
 button {
@@ -39,7 +39,7 @@ img {
 }
 
 address {
-   font-style: normal;
+  font-style: normal;
 }
 
 html {
@@ -51,36 +51,32 @@ html {
   box-sizing: inherit;
 }
 
+.container {
+max-width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+outline: 2px solid red;
+}
+
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
   font-size: 14px;
   line-height: 1.1;
 }
+/* -------------------------------HEADER------------------------------ */
+.logo {
+  padding-top: 24px;
+  display: block;
+}
 
-
- .container {
-max-width: 1200px;
-padding-left: 15px;
-padding-right: 15px;
-margin: 0 auto;
-outline: 2px solid red;
- }
-
-section {
-   padding-top: 20px;
-   padding-bottom: 20px;
- }
-
-
-
-/* ---------------------HEADER--------------------- */
 /* Logo */
 .logo {
   /* WebStudio */
-  padding-top: 24px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -88,36 +84,14 @@ section {
   line-height: 1.2;
   text-decoration: none;
   color: var(--accent-color);
- 
 }
-
-
 .accent-header {
   color: var(--logo-color);
 }
 
-  
-
 /* Site nav */
-.site-nav  {
-display: flex;
-
-padding-top: 32px;
-width: 750px;
-}
-
-.site-nav .item:not(:last-child) {
-
-  margin-right: 50px;
-}
-.link-nav {
-
-
-  
-}
-.site-nav .link {
+.site-nav.link {
   color: var(--title-text-color);
-
 }
 .site-nav.link:hover,
 .site-nav.link:focus {
@@ -127,25 +101,31 @@ width: 750px;
   color: var(--accent-color);
 }
 
-/* ---------------------MAIN--------------------- */
+   .header-wrap {
+
+}
+
+   .site-nav {
+
+}
+   .item-nav {
+
+}
+
+   .item-contact {
+
+  }
+/* -------------------------------MAIN------------------------------- */
 .main-section {
+  background-color: var(--background-color);
+}
+
+.main- {
+  height: calc( 100vh - 200px );
   display: flex;
-  flex-wrap: 750px;
-padding-top: 120px;
-padding-bottom: 120px;
-background-color: var(--background-color);
 }
-
-.main-wrap {
-width: 100%;
- padding: 272px 100px 208px;
-margin: auto;
-}
-
-
 
 .main-title {
-    margin-bottom: 20px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -153,8 +133,8 @@ margin: auto;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
- 
 }
+/* -------------------------------MAIN BUTTON-------------------------- */
 .main-button {
   font-family: inherit;
   font-weight: 700;
@@ -167,41 +147,27 @@ margin: auto;
   background-color: var(--accent-color);
   cursor: pointer;
   margin: 0 auto;
-  display: block;
-  margin-top: 30px;
-   max-width: 60px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+border-radius: 4px;
+padding: 10px 32px;
+
 }
 .main-button:hover,
 .main-button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
 }
+/* ------------------ ABOUT----------------- */
 .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
   color: var(--title-text-color);
-   max-width: 60px;
-       margin-bottom: var(--typical-margin);
 }
 
-.hiden-title { 
-text-decoration:transparent;
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-
-
+.hiden-title {
+  visibility: hidden;
 }
- .box-nav {
- padding-top: 24px;
- }
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -209,14 +175,13 @@ text-decoration:transparent;
   text-align: center;
 }
 
-
 .text {
   font-size: 14px;
   line-height: 1.7;
   color: var(--primary-text-color);
 }
 
-/* Застосується до всіх тегів з класом link */
+/* -----------------ACTIVITY---------------- */
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -229,80 +194,22 @@ text-decoration:transparent;
 .link:focus {
   color: var(--accent-color);
 }
-
-/* Contacts */
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  color: var(--primary-text-color);
-  text-decoration: none;
-  letter-spacing: 0.02em;
-}
-.contact:hover,
-.contact:focus {
-  color: var(--accent-color);
-}
-/* Buttons */
-.button {
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--button-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-   max-width: 60px;
-}
-.button.primary {
-  text-decoration: none;
-  font-family: inherit;
-  color: var(--title-text-color);
-  background-color: var(--button-color);
-   max-width: 60px;
-}
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-  background-color: var(--button-color);
-}
-
+/* ------------------TEAM--------------------- */
 /* Cards whith images */
 .card-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   color: var(--title-text-color);
-   max-width: 60px;
 }
 .card-description {
   font-size: 16px;
   line-height: 1.2;
   color: var(--primary-text-color);
-   max-width: 60px;
 }
-.project {
-  text-decoration: none;
-
-}
-.project-name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  color: var(--title-text-color);
-   max-width: 60px;
-}
-.project-description {
-  font-size: 16px;
-  line-height: 2;
-  color: var(--primary-text-color);
-}
-
-/* --------------------FOOTER--------------------- */
+/* ----------------------------------FOOTER------------------------------- */
 footer {
   font-family: 'Roboto', sans;
-    background-color: var(--background-color);
 }
 .logo-footer {
   text-decoration: none;
@@ -326,7 +233,9 @@ address {
   line-height: 1.7;
   color: var(--primary-white-color);
 }
-
+footer {
+  background-color: var(--background-color);
+}
 .footer-contact {
   font-size: 14px;
   line-height: 1.7;
@@ -337,4 +246,72 @@ address {
 .footer-contact:focus {
   color: var(--accent-text-color);
   text-decoration: none;
+}
+
+
+
+/* ------------------------------PORTFOLIO------------------------------- */
+/* Contacts */
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.contact:hover,
+.contact:focus {
+  color: var(--accent-color);
+}
+/* Buttons */
+.button {
+  text-decoration: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--button-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+.button.primary {
+  text-decoration: none;
+  font-family: inherit;
+  color: var(--title-text-color);
+  background-color: var(--button-color);
+}
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--button-color);
+}
+.auth-nav {
+
+}
+
+.button-nav {
+display: inline-block;
+border-radius: 4px;
+padding: 5.95px 25px;
+margin:30px 6px 40px 100px
+
+}
+
+.project {
+  text-decoration: none;
+}
+.project-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--title-text-color);
+}
+.project-description {
+  font-size: 16px;
+  line-height: 2;
+  color: var(--primary-text-color);
+}
+.project-nav {
+
 }
