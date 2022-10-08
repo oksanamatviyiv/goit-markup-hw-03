@@ -13,17 +13,17 @@
 </head>
 <body>
     <!--header-->  
-    <header class="heder">
+    <header class="header">
      <div class="container header-wrap">
       <a class="logo" href="./index.html">Web<span class="accent-header">Studio</span></a>
         <nav class="site-nav">    
-        <ul>
+        <ul class="nav">
             <li class="item-nav link"><a href="./index.html" class="link curent">Студія</a></li>
             <li class="item-nav link"><a href="./portfolio.html" class="link">Портфоліо</a></li>
             <li class="item-nav link"><a href="./contact.html" class="link">Контакт</a></li>
         </ul>
         </nav>
-          <ul>
+          <ul class="auth-nav">
           <li class="item-contact">
             <a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a>
             </li>
@@ -38,7 +38,7 @@
         <!--main content-->
       <section class="main-section">
        <div class="container main-wrap">
-        <h1 class="main-title main-wrap">Ефективні рішення для вашого бізнесу</h1>
+        <h1 class="main-title">Ефективні рішення для вашого бізнесу</h1>
         <!--main button-->
         <button type="button" class="main-button">
         Замовити послугу
@@ -49,20 +49,20 @@
       <section class="section-about">
        <div class="container">
         <h2  class="hiden-title">Акценти у роботі</h2>
-          <ul>
-            <li>
+          <ul class="about">
+            <li class="text-wrap">
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li>
+            <li class="text-wrap">
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </li>
-            <li>
+            <li class="text-wrap">
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li>
+            <li class="text-wrap">
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
@@ -71,20 +71,23 @@
       </section>
       <!--activity-->
       <section class="section-activity"> 
-       <div class="container">
+       <div class="container main-activity">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>              
-            <li>
+         <ul class="activity">             
+            <li><div class="activity-item">
               <img src="./images/picture-1.jpg" 
               alt="image computer" width="370" height="294"/>
+              </div>
             </li>
-            <li>
+            <li><div class="activity-item">
               <img src="./images/picture-2.jpg"
               alt="image smartphone" width="370" height="294"/>
+              </div>
             </li>
-            <li>
+            <li><div class="activity-item">
               <img src="./images/picture-3.jpg"
               alt="image tablet" width="370" height="294"/>
+                </div>
             </li>
         </ul>
        </div> 
@@ -94,8 +97,8 @@
            <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <!--specialists-->
-          <ul> 
-              <li>                              
+          <ul class="main-team"> 
+              <li class="card-element">                              
                   <img
                   class="card-image"
                   src="./images/photo-1.jpg"
@@ -104,31 +107,31 @@
                   <h3 class="card-name">Ігор Дем'яненко</h3>   
                   <p class="card-description">Product Designer</p> 
               </li>
-              <li>
+              <li class="card-element"><div>
                   <img
                   class="card-image"
                   src="./images/photo-2.jpg"
                   alt="image specialist" width="270"
                   />
                   <h3 class="card-name">Ольга Рєпіна</h3>
-                  <p class="card-description">Frontend Developer</p>
+                  <p class="card-description">Frontend Developer</p></div>
               </li> 
-              <li> 
+              <li class="card-element"><div>
                 <img
                 class="card-image"
                 src="./images/photo-3.jpg"
                 alt="image specialist" width="270"
                 />
                 <h3 class="card-name">Микола Тарасов</h3>
-                <p class="card-description">Marketing</p>
+                <p class="card-description">Marketing</p></div>
               </li>
-              <li>
+              <li class="card-element"><div>
                 <img
                   class="card-image"
                   src="./images/photo-4.jpg"
                   alt="image specialist" width="270"/>
                   <h3 class="card-name">Михайло Єрмаков</h3>
-                  <p class="card-description">UI Designer</p>
+                  <p class="card-description">UI Designer</p></div>
               </li>
           </ul> 
        </div>   
@@ -137,10 +140,10 @@
     <!-- footer --> 
     <footer class="container body-footer">
       <a class="logo" href="./studio.html">Web<span class="accent-footer">Studio</span></a>
-      <div class="container address-wrap">
+      <div class="address-wrap">
       <address>
           <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-        <ul>
+        <ul class="contact">
           <li><a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="footer-contact" href="tel:0961111111">096 111 11 11</a></li>
         </ul>
